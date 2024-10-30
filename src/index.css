@@ -1,3 +1,7 @@
 form {
   width: 100%;
 }
+
+.card:Hover{
+  border-radius: 0;
+}
