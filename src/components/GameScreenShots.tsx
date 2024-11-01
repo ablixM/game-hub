@@ -9,9 +9,10 @@ const GameScreenShots = ({gameId}:Props) => {
     const {data, error, isLoading} = useScreenshots(gameId)
     if (error) throw error
 
-    if (isLoading) return <Spinner/>
+    if (isLoading) return null
+
     return (
-        <SimpleGrid columns={{base: 1, md: 2, xl:3}} >
+        <SimpleGrid columns={{base: 1, md: 2}} >
             {
                 data?.results?.map(file => <Image padding={5} key={file.id} src={file.image}/>)
             }
