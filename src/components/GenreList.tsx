@@ -10,7 +10,7 @@ import {
 import useGenres from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 import useGameQueryStore from "../store";
-import {Genre} from "../entities/genre";
+import Genre from "../entities/genre";
 
 
 

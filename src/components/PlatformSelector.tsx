@@ -4,7 +4,7 @@ import { BsChevronDown } from "react-icons/bs";
 import { usePlatforms } from "../hooks/usePlatforms";
  import usePlatform from "../hooks/usePlatform";
  import useGameQueryStore from "../store";
- import {Platform} from "../entities/platform";
+
 
 
 

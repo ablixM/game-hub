@@ -1,4 +1,4 @@
-import platforms from "../data/platforms";
+
 import usePlatforms from "./usePlatforms";
 
 
