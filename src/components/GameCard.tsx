@@ -1,10 +1,10 @@
-import {Box, Card, CardBody, Heading, HStack, Image, Text} from "@chakra-ui/react";
+import {Box, Card, CardBody, Heading, HStack, Image} from "@chakra-ui/react";
 import React from "react";
 import getCroppedImageUrl from "../services/image-url";
 import CriticScore from "./CriticScore";
 import Emoji from "./Emoji";
 import PlatformIconList from "./PlatformIconList";
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Game from "../entities/game";
 
 interface Props {
@@ -12,11 +12,7 @@ interface Props {
 }
 
 const GameCard = ({ game }: Props) => {
-    const navigate = useNavigate()
-    const handleCardClick = () => {
-        navigate("/games"); // Redirects to the details page
-    };
-  return (
+    return (
     <Card >
       <Box overflow={"hidden"}>
           <Image
